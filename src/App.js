@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Table from "../src/components/Table.js";
 
 function App() {
+
+// Precisa mudar as etiquetas (labels) da tabela em função dos dados da API
+// Esse é só um exemplo de como funciona ↓
+  const columns = [
+    { label: "Full Name", accessor: "full_name", sortable: true },
+    { label: "Email", accessor: "email", sortable: false },
+    { label: "Gender", accessor: "gender", sortable: true, sortbyOrder: "desc" },
+    { label: "Age", accessor: "age", sortable: true },
+    { label: "Start date", accessor: "start_date", sortable: true },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+  <div className="table_container">
+      <h1>Tabela para Ordenação</h1>
+      <Table
+        caption="Ordenação Asc-Desc por nome ou valor numérico"
+        // data={}
+        columns={columns} />
+      <br />
+      <br />
     </div>
+    </>
   );
 }
 
