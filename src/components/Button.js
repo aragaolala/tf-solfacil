@@ -1,3 +1,5 @@
+import "../components/button.css"
+
 function Button ({
     type,
     onClick,
