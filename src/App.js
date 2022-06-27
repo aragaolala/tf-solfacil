@@ -2,22 +2,22 @@ import Table from "../src/components/Table.js";
 
 function App() {
 
-// Precisa mudar as etiquetas (labels) da tabela em função dos dados da API
-// Esse é só um exemplo de como funciona ↓
+// Labels já de acordo com os dados da API ↓
+
   const columns = [
-    { label: "Full Name", accessor: "full_name", sortable: true },
-    { label: "Email", accessor: "email", sortable: false },
-    { label: "Gender", accessor: "gender", sortable: true, sortbyOrder: "desc" },
-    { label: "Age", accessor: "age", sortable: true },
-    { label: "Start date", accessor: "start_date", sortable: true },
+    { label: "Nome do cliente", accessor: "nomeCompleto", sortable: true },
+    { label: "Valor financiado", accessor: "valorFinanciado", sortable: true },
+    { label: "Valor Bruto", accessor: "valorBruto", sortable: true, sortbyOrder: "desc" },
+    { label: "Valor de aquisição", accessor: "valorAquisicao", sortable: true },
+    { label: "Prazo", accessor: "parcelas", sortable: true },
+    { label: "Nº CCB", accessor: "numCcb", sortable: true },
   ];
 
   return (
     <>
   <div className="table_container">
-      <h1>Tabela para Ordenação</h1>
       <Table
-        caption="Ordenação Asc-Desc por nome ou valor numérico"
+        caption=""
         // data={}
         columns={columns} />
       <br />
