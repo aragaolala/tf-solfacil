@@ -1,5 +1,5 @@
-import TableBody from "../componentes/TableBody.js";
-import TableHead from "../componentes/TableHead.js";
+import TableBody from "../components/TableBody.js";
+import TableHead from "../components/TableHead.js";
 import { useSortableTable } from "../useSortableTable.js";
 
 const Table = ({ caption, data, columns }) => {
