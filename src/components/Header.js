@@ -1,0 +1,1 @@
+// <button>  + "Formalizações aprovadas" +  <button> Gerar CNAB </button>

@@ -1,15 +1,12 @@
 export function TableHead  ({
-label
+value,
+className
 })
 {
   return (
     <thead>
-      <tr>
-        <th>
-        
-        {label}
-
-        </th>
+      <tr className="headerTable">
+        {value.map(item=><th>{item}</th>)}
       </tr>
     </thead>
   );

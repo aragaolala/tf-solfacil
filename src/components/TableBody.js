@@ -1,9 +1,11 @@
-export function TableBody (){
+export function TableBody ({
+    value,
+}){
     return (
         <tbody>
             <tr>
-            <td></td>
-        </tr>
+            {value.map(item=><th>{item}</th>)}
+            </tr>
     </tbody>
     )
 };

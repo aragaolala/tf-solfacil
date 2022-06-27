@@ -1,27 +1,20 @@
-import {TableBody} from "../components/TableBody.js";
-import {TableHead} from "../components/TableHead.js";
+import { TableHead } from "../components/TableHead.js";
+import { TableBody } from "../components/TableBody.js";
 // import { useState, useEffect } from "react";
 // import axios from "axios";
 
-export function Table ()
-{
-    return (
-        <>
+export function Table() {
+  return (
+    <>
       <table className="table">
-        <TableHead
-        label= "coisa"/>
-        <TableBody />
+        <TableHead value= {['Nome do Cliente', 'Valor Financiado', 'Valor Bruto', 'Valor de aquisição','Prazo','Nº CCB']} />
+        
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
       </table>
     </>
-    )
+  );
 }
-
-
-
-
-
-
-
-
-
-
