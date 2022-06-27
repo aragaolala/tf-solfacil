@@ -1,19 +1,27 @@
-import TableBody from "../components/TableBody.js";
-import TableHead from "../components/TableHead.js";
-import { useSortableTable } from "../useSortableTable.js";
+import {TableBody} from "../components/TableBody.js";
+import {TableHead} from "../components/TableHead.js";
+// import { useState, useEffect } from "react";
+// import axios from "axios";
 
-const Table = ({ caption, data, columns }) => {
-  const [tableData, handleSorting] = useSortableTable(data, columns);
-
-  return (
-    <>
+export function Table ()
+{
+    return (
+        <>
       <table className="table">
-        <caption>{caption}</caption>
-        <TableHead {...{ columns, handleSorting }} />
-        <TableBody {...{ columns, tableData }} />
+        <TableHead
+        label= "coisa"/>
+        <TableBody />
       </table>
     </>
-  );
-};
+    )
+}
 
-export default Table;
+
+
+
+
+
+
+
+
+
