@@ -1,20 +1,23 @@
-import "./App.css";
-import axios from "axios";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const getApi = () => {
-    axios
-      .get("https://mocki.io/v1/5fcf051d-2867-4698-8c1c-df076b4d2948")
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
   return (
-    <div className="teste">
-      <button onClick={getApi}>Get API</button>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
