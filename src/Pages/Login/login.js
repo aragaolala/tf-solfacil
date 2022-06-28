@@ -5,11 +5,14 @@ import Logo from "../../img/logo-solfacil-png.png";
 import styles from "./login.module.css";
 import { login, useAuth } from "../../firebase/firebase";
 import { useNavigate } from 'react-router';
+// import ErrorsMessage from "./loginValid";
 
 
 function Login() {
 
-    // const [msgError, setMsgError] = useState("")
+    const [msgError, setMsgError] = useState("")
+
+    // const { errors } = handleLogin(ErrorsMessage)
 
     const navigate = useNavigate();
 
@@ -21,14 +24,34 @@ function Login() {
 
 
     async function handleLogin(e) {
-        e.preventDefault();
-        // console.log(email.current.value, password.current.value);
+        e.preventDefault()
         setLoading(true);
 
         try {
-            await login(email.current.value, password.current.value);
+            if (!email) {
+                setMsgError('Eita, faltou o email.');
+                return
+            }
+            if (!/\S+@\S+\.\S+/.test(email)) {
+                setMsgError('Ops, email inválido.');
+                return
+            }
+            if (!password) {
+                setMsgError('Ops, faltou a senha.');
+                return
+            } 
+            if (password.length < 6) {
+                setMsgError('Vish, senha curta.');
+                return
+            }
+            setMsgError("")
+            await login(email, password);
+            
+            
         } catch {
-            alert("Error!");
+
+            // ok = !email && !password;
+
         }
         setLoading(false)
         navigate("/feed");
@@ -43,31 +66,31 @@ function Login() {
                     classNameLabel="input-label"
                     label="Seu E-mail"
                     type="text"
-                    onchange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     placeholder="user@suaempresa.com.br"
-                    required={true}
+                    // required={true}
                 />
                 <Input
                     classNameInput="input"
                     classNameLabel="input-label"
                     label="Sua senha"
                     type="password"
-                    onchange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                     name="password"
                     placeholder="******"
-                    required={true}
+                    // required={true}
                 />
                 <Button
                     text="Entrar"
                     ClassName="button-input"
                     disabled={loading || currentUser}
                 />
-                {/* {msgError && (
+                {msgError && (
                     <div className="error-container">
                         <p className="error-mensage">{msgError}</p>
                     </div>
-                )} */}
+                )}
             </form>
         </div>
     );
