@@ -1,28 +1,37 @@
 import {Table} from "./components/Table.js";
 import{Overrall} from "./components/Overrall.js";
-
+import {Header} from './components/Header.js';
+import {Footer} from './components/Footer.js';
 
 const Feed = () => {
 
   return (
 
-// Aqui entraria o component Header
-    <>
+    <main className='feedContainer'>
+      
+    <Header />
+    
     <section className="tableUpperContent">
       <h2>  Total Formalizações </h2>
 
       <div className="sumContainers">
-        <Overrall value={'Financiamento'} />
-        <Overrall value={'Bruto'} />
-        <Overrall value={'Aquisição'} />
+        <Overrall value={'Financiamento'}
+        className='sumContainer' />
+        <Overrall value={'Bruto'} 
+        className='sumContainer'/>
+        <Overrall value={'Aquisição'} 
+        className='sumContainer'/>
       </div>
     </section>
-    
+
     <section className="tableContainer">
         <Table />
     </section>
-    </>
-// Aqui entraria o component Footer
+      
+    <Footer />
+    </main>
+    
+    
 
   )
 }
