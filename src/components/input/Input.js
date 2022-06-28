@@ -22,7 +22,7 @@ function Input({
             name={name}
             value={value}
             placeholder={placeholder}
-            required={true}>
+            >
         </input>
       </div>
     )

@@ -23,8 +23,17 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 
-export function login(email, password) {
-  return signInWithEmailAndPassword(auth, email, password);
+export async function login(email, password) {
+
+  return await signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const  user = userCredential.user;
+    // ...
+    return user;
+  
+  });
+
 }
 
 
