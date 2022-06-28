@@ -1,13 +1,18 @@
 import { useState } from "react";
-
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
 import Logo from "../../img/logo-solfacil-png.png";
-
 import styles from "./login.module.css";
-
-// firebase
 import { login, useAuth } from "../../firebase/firebase";
+// import { Navigate } from 'react-router'; ----- navegação
+
+/* Dúvida: encaixar no handleLogin após o setLoading? Deu erro.
+
+.then(() => {
+  Navigate("feed"); ----- navegação
+})
+
+*/
 
 function Login() {
   const userInfo = {
