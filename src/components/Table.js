@@ -3,7 +3,7 @@ import { TableBody } from "../components/TableBody.js";
 // import { useState, useEffect } from "react";
 // import axios from "axios";
 
-export function Table() {
+export function Table({data}) {
   return (
     <>
       <table className="table">
