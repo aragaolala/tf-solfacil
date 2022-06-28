@@ -1,4 +1,4 @@
-import "../components/button.css"
+import "./button.css"
 
 function Button ({
     type,

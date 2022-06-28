@@ -1,4 +1,4 @@
-import "../components/input.css"
+import "./input.css"
 
 function Input({
     type,

@@ -1,6 +1,6 @@
-import TableBody from "../components/TableBody.js";
-import TableHead from "../components/TableHead.js";
-import { useSortableTable } from "../useSortableTable.js";
+import TableBody from "./TableBody.js";
+import TableHead from "./TableHead.js";
+import { useSortableTable } from "../../useSortableTable.js";
 
 const Table = ({ caption, data, columns }) => {
   const [tableData, handleSorting] = useSortableTable(data, columns);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Input from "../../components/Input";
-import Button from "../../components/Button";
+import Input from "../../components/input/Input";
+import Button from "../../components/button/Button";
 import Logo from "../../img/logo-solfacil-png.png";
 
 import styles from "./login.module.css";
@@ -33,7 +33,7 @@ function Login() {
     setInfo({ ...info, [name]: value });
   };
 
-  console.log(info);
+ // console.log(info);
 
   async function handleLogin(e) {
     e.preventDefault();
