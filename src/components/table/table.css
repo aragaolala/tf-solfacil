@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik:wght@300;400;500&display=swap');
 
 .table {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 32px;
-gap: 24px;
-width: 688px;
-height: 879px;
-background: #FFFFFF;
-box-shadow: 0px 16px 64px rgba(0, 0, 0, 0.16);
-border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+    gap: 24px;
+    width: 1108px;
+    height:fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 64px rgb(0 0 0 / 16%);
+    border-radius: 4px;
+    align-content: flex-start;
+    justify-content: center;
 }
 
 .headerTable{
@@ -20,10 +21,11 @@ align-items: center;
 padding: 16px;
 gap: 8px;
 padding: 5px;
-width: max-content;
-height: 49px;
+width: 1028px;
+height: 51px;
 border-radius: 4px 0px 0px 4px;
-border: 1px solid red;
+border: none;
+border-bottom: 1px solid #FFB600;
 }
 
 thead {
@@ -51,28 +53,29 @@ height: 49px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;   
+    line-height: 150%;  
     color: #666666;
+    width: 1028px;
+    height: 21px;
 }
 
 tbody {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-width: 1028px;
-height: 67px;
-background: #FFFFFF;
-border: 1px solid #E0E0E0;
-border-radius: 4px;
-flex: none;
-order: 9;
-align-self: stretch;
-flex-grow: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 1028px;
+    height: 67px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    align-self: stretch;
 }
 
+
 .bodyTable {
-color: white;
+ 
 }
 
