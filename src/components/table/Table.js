@@ -1,19 +1,20 @@
-import TableBody from "./TableBody.js";
-import TableHead from "./TableHead.js";
-import { useSortableTable } from "../../useSortableTable.js";
+import { TableHead } from "../table/TableHead";
+import { TableBody } from "../table/TableBody";
+// import { useState, useEffect } from "react";
+// import axios from "axios";
 
-const Table = ({ caption, data, columns }) => {
-  const [tableData, handleSorting] = useSortableTable(data, columns);
-
+export function Table() {
   return (
     <>
       <table className="table">
-        <caption>{caption}</caption>
-        <TableHead {...{ columns, handleSorting }} />
-        <TableBody {...{ columns, tableData }} />
+        <TableHead value= {['Nome do Cliente', 'Valor Financiado', 'Valor Bruto', 'Valor de aquisição','Prazo','Nº CCB']} />
+        
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
+        <TableBody value= {['Fulano', 'R$40.000,00', 'R$40.000,00', 'R$40.000,00','48x','124124214']} />
       </table>
     </>
   );
-};
-
-export default Table;
+}

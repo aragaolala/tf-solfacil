@@ -1,18 +1,11 @@
-const TableBody = ({ tableData, columns }) => {
+export function TableBody ({
+    value,
+}){
     return (
-      <tbody>
-        {tableData.map((data) => {
-          return (
-            <tr key={data.id}>
-              {columns.map(({ accessor }) => {
-                const tData = data[accessor] ? data[accessor] : "——";
-                return <td key={accessor}>{tData}</td>;
-              })}
+        <tbody>
+            <tr>
+            {value.map(item=><th>{item}</th>)}
             </tr>
-          );
-        })}
-      </tbody>
-    );
-  };
-  
-  export default TableBody;
+    </tbody>
+    )
+};

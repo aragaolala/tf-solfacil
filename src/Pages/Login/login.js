@@ -33,12 +33,12 @@ function Login() {
     setInfo({ ...info, [name]: value });
   };
 
- // console.log(info);
+  // console.log(info);
 
   async function handleLogin(e) {
     e.preventDefault();
     setLoading(true);
-    
+
     try {
       await login(info);
     } catch {
@@ -46,8 +46,6 @@ function Login() {
     }
     setLoading(false);
   }
-
-  
 
   /* const submit = (e) => {
         e.preventDefault()
@@ -84,7 +82,6 @@ function Login() {
         <Button
           text="Entrar"
           ClassName="button-input"
-          
           disabled={loading || currentUser}
         />
         {/* {msgError && (
@@ -99,5 +96,4 @@ function Login() {
 
 export default Login;
 
-
-// onClick={handleLogin} 
+// onClick={handleLogin}
