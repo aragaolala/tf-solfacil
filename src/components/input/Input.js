@@ -1,3 +1,5 @@
+import "./input.css"
+
 function Input({
     type,
     name,

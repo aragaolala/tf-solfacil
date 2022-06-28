@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+.containerLogin {
+    position: relative;
+    width: 1366px;
+    height: 768px;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-block: auto;
+
+}
+
+.logo{
+    height: 32px;
+    width: 205px;
+    margin-block: 1rem;
+
+}
+
+.tituloLogin {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #666666;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+    background-color: white;
+    width: 538px;
+    height: 316px;
+}
+
+
