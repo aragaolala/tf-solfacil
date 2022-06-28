@@ -1,3 +1,5 @@
+import "./table.css"
+
 export function TableHead  ({
 value,
 className
@@ -6,7 +8,7 @@ className
   return (
     <thead>
       <tr className="headerTable">
-        {value.map(item=><th>{item}</th>)}
+        {value.map(item=><th className="tableHeaderCell">{item}</th>)}
       </tr>
     </thead>
   );
