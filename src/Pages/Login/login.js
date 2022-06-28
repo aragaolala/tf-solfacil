@@ -4,61 +4,58 @@ import Button from "../../components/button/Button";
 import Logo from "../../img/logo-solfacil-png.png";
 import styles from "./login.module.css";
 import { login, useAuth } from "../../firebase/firebase";
-// import { Navigate } from 'react-router'; ----- navegação
+import { useNavigate } from 'react-router';
+// import ErrorsMessage from "./loginValid";
 
-/* Dúvida: encaixar no handleLogin após o setLoading? Deu erro.
-
-.then(() => {
-  Navigate("feed"); ----- navegação
-})
-
-*/
 
 function Login() {
-    const userInfo = {
-        email: "",
-        password: "",
-    };
 
-    const [info, setInfo] = useState({ userInfo });
+    const [msgError, setMsgError] = useState("")
 
-    // const [msgError, setMsgError] = useState("")
+    // const { errors } = handleLogin(ErrorsMessage)
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
     const [loading, setLoading] = useState(false);
     const currentUser = useAuth();
 
-    //const emailRef = useRef();
-    // const passwordRef = useRef();
-
-    // ---------------   Erro: não está pegando os valores do input (27/06)
-
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setInfo({ ...info, [name]: value });
-    };
-
-    // console.log(info);
 
     async function handleLogin(e) {
-        e.preventDefault();
+        e.preventDefault()
         setLoading(true);
 
         try {
-            await login(info);
+            if (!email) {
+                setMsgError('Eita, faltou o email.');
+                return
+            }
+            if (!/\S+@\S+\.\S+/.test(email)) {
+                setMsgError('Ops, email inválido.');
+                return
+            }
+            if (!password) {
+                setMsgError('Ops, faltou a senha.');
+                return
+            } 
+            if (password.length < 6) {
+                setMsgError('Vish, senha curta.');
+                return
+            }
+            setMsgError("")
+            await login(email, password);
+            
+            
         } catch {
-            alert("Error!");
-        }
-        setLoading(false);
-    }
 
-    /* const submit = (e) => {
-          e.preventDefault()
-  
-          //função auth firebase
-          console.log(info)
-      }
-      */
+            // ok = !email && !password;
+
+        }
+        setLoading(false)
+        navigate("/feed");
+    }
 
     return (
         <div className={styles.containerLogin}>
@@ -69,36 +66,34 @@ function Login() {
                     classNameLabel="input-label"
                     label="Seu E-mail"
                     type="text"
-                    onchange={handleInputChange}
+                    onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     placeholder="user@suaempresa.com.br"
-                    required={true}
+                    // required={true}
                 />
                 <Input
                     classNameInput="input"
                     classNameLabel="input-label"
                     label="Sua senha"
                     type="password"
-                    onchange={handleInputChange}
+                    onChange={(e) => setPassword(e.target.value)}
                     name="password"
                     placeholder="******"
-                    required={true}
+                    // required={true}
                 />
                 <Button
                     text="Entrar"
                     ClassName="button-input"
                     disabled={loading || currentUser}
                 />
-                {/* {msgError && (
+                {msgError && (
                     <div className="error-container">
                         <p className="error-mensage">{msgError}</p>
                     </div>
-                )} */}
+                )}
             </form>
         </div>
     );
 }
 
 export default Login;
-
-// onClick={handleLogin}
