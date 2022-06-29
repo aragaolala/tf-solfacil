@@ -18,13 +18,13 @@
     background-color: transparent;
 }
 
-.footerButton {
-    background: transparent;
-    cursor: pointer;
+.paragrafo-footer {
     font-size: 14px;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    color: #666666;
+    margin-left: 0.5rem;
 }

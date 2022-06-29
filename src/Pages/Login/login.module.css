@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.logo{
+.logo {
     height: 3rem;
     width: 20rem;
     margin-block: 2rem;
@@ -30,12 +30,19 @@
     gap: 24px;
     background-color: white;
     width: 35rem;
-    height: 20rem;   
+    height: 22rem;
 }
+
+.errorMensage {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #df1c1c;
+}
+
 
 @media screen and (max-width: 500px) {
     .containerForm {
         width: 22rem;
-        height: 20rem;
+        height: 22rem;
     }
 }

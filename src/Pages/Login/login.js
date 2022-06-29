@@ -42,7 +42,7 @@ function Login() {
             if (!password) {
                 setMsgError('Ops, faltou a senha.');
                 return
-            } 
+            }
             if (password.length < 6) {
                 setMsgError('Eita, senha curta.');
                 return
@@ -78,7 +78,7 @@ function Login() {
                     onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     placeholder="user@suaempresa.com.br"
-                    // required={true}
+                // required={true}
                 />
                 <Input
                     classNameInput="input"
@@ -88,7 +88,7 @@ function Login() {
                     onChange={(e) => setPassword(e.target.value)}
                     name="password"
                     placeholder="******"
-                    // required={true}
+                // required={true}
                 />
                 <Button
                     text="Entrar"
@@ -96,8 +96,8 @@ function Login() {
                     disabled={loading || currentUser}
                 />
                 {msgError && (
-                    <div className="error-container">
-                        <p className="error-mensage">{msgError}</p>
+                    <div className={styles.errorContainer}>
+                        <p className={styles.errorMensage}>{msgError}</p>
                     </div>
                 )}
             </form>
