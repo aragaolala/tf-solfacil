@@ -9,15 +9,23 @@ export function Table({ posts }) {
     posts.map((post) => {
       return (
         <>
-          <table className="table">
             <thead>
               <tr className="headerTable">
                 <th className="tableHeaderCell"></th>
               </tr>
             </thead>
+          <table className="table">
             <tbody>
               <tr className="bodyTable">
-                <th className="tableBodyCell">{post.cpf}</th>
+                <th className="tableBodyCell">{post.nomeCompleto}</th>
+                <th className="tableBodyCell">R$ {post.valorFinanciado}</th>
+                <th className="tableBodyCell">R$ {post.valorBruto}</th>
+                <th className="tableBodyCell">R$ {post.valorAquisicao}</th>
+                <th className="tableBodyCell">
+                  {post.parcelas}
+                  <th>{post.cet}</th>
+                </th>
+                <th className="tableBodyCell">{post.numCcb}</th>
               </tr>
             </tbody>
           </table>
