@@ -32,19 +32,19 @@ function Login() {
 
         try {
             if (!email) {
-                setMsgError('Eita, faltou o email.');
+                setMsgError('Preencha o campo email.');
                 return
             }
             if (!/\S+@\S+\.\S+/.test(email)) {
-                setMsgError('Ops, email inválido.');
+                setMsgError('Email inválido.');
                 return
             }
             if (!password) {
-                setMsgError('Ops, faltou a senha.');
+                setMsgError('Preecha o campo senha.');
                 return
             }
             if (password.length < 6) {
-                setMsgError('Eita, senha curta.');
+                setMsgError('Senha curta.');
                 return
             }
             setMsgError("")
@@ -54,10 +54,10 @@ function Login() {
             
         } catch(error) {
             const errorCode = error.code;
-            console.log(errorCode, "JESUS")
+            console.log(errorCode, "Senha incorreta.")
             switch(errorCode) {
                 case "auth/wrong-password": 
-                setMsgError('Senha errada.');
+                setMsgError('Senha incorreta.');
                 break
 
                 default: setMsgError('Ops, algo aconteceu.');
