@@ -41,27 +41,6 @@ const Feed = () => {
           <Table posts={posts} />
         </section>
 
-        <div>
-
-          {/* {posts.map((post) => {
-            return (
-              <div key={post.id}>
-                <h2 className="post-body">{post.nomeCompleto}</h2>
-                <h2 className="post-title">{post.cpf}</h2>
-                <p className="post-body">{post.cet}</p>
-                <p className="post-body">{post.id} -id </p>
-                <p className="post-body">{post.numCcb}</p>
-                <p className="post-body">{post.tipo}</p>
-                <p className="post-body">{post.parcelas}</p>
-                <p className="post-body">{post.valorAquisicao}</p>
-                <p className="post-body">{post.valorBruto}</p>
-                <p className="post-body">{post.valorFinanciado}</p>
-              </div>
-            );
-          }
-          )} */}
-        </div>
-
       </main>
       <Footer />
 
