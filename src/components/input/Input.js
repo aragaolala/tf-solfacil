@@ -16,6 +16,7 @@ function Input({
       <div>
         <label className={classNameLabel}>{label}</label>
         <input
+            autoComplete="off"
             className={classNameInput}
             type={type}
             onChange={onChange}
