@@ -5,6 +5,7 @@ import Logo from "../../img/logo-solfacil.png";
 import styles from "./login.module.css";
 import { login, useAuth } from "../../firebase/firebase";
 import { useNavigate } from 'react-router';
+
 // import ErrorsMessage from "./loginValid";
 
 
@@ -43,20 +44,26 @@ function Login() {
                 return
             }
             if (password.length < 6) {
-                setMsgError('Vish, senha curta.');
+                setMsgError('Eita, senha curta.');
                 return
             }
             setMsgError("")
             await login(email, password);
+            navigate("/feed");
+            
+            
+        } catch(error) {
+            const errorCode = error.code;
+            console.log(errorCode, "JESUS")
+            switch(errorCode) {
+                case "auth/wrong-password": 
+                setMsgError('Senha errada.');
+                break
 
-
-        } catch {
-
-            // ok = !email && !password;
-
-        }
-        setLoading(false)
-        navigate("/feed");
+                default: setMsgError('Ops, algo aconteceu.');
+            }
+        } 
+        setLoading(false);
     }
 
     return (
