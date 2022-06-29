@@ -6,7 +6,7 @@ export function TableBody ({
     return (
         <tbody>
             <tr className="bodyTable">
-            {value.map(item=><th className="tableBodyCell">{item}</th>)}
+            {value.map((item, i)=><th key={i} className="tableBodyCell">{item}</th>)}
             </tr>
     </tbody>
     )
