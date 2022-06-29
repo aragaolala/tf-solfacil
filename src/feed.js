@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable-next-line */
+import React, { useState, useEffect, useMemo } from 'react';
+import axios from "axios";
 import { Table } from "./components/table/Table";
 import { Overrall } from "./components/overrall/Overrall.js";
 import { Header } from "./components/header/Header.js";
 import { Footer } from './components/footer/Footer.js';
-import React, { useState, useEffect } from "react";
-import axios from "axios";
 
 const Feed = () => {
 
@@ -22,20 +24,16 @@ const Feed = () => {
 
   return (
     <>
-      <main className='feedContainer'>
-
+      <main className="feedContainer">
         <Header />
 
         <section className="tableUpperContent">
-          <h2>  Total Formalizações </h2>
+          <h2> Total Formalizações </h2>
 
           <div className="sumContainers">
-            <Overrall value={'Financiamento'}
-              className='sumContainer' />
-            <Overrall value={'Bruto'}
-              className='sumContainer' />
-            <Overrall value={'Aquisição'}
-              className='sumContainer' />
+            <Overrall value={"Financiamento"} className="sumContainer" />
+            <Overrall value={"Bruto"} className="sumContainer" />
+            <Overrall value={"Aquisição"} className="sumContainer" />
           </div>
         </section>
 
@@ -66,12 +64,11 @@ const Feed = () => {
 
       </main>
       <Footer />
+
+    
+      
     </>
-
-
-
-  )
-}
+  );
+};
 
 export default Feed;
-

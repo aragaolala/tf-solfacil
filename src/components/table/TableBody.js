@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-lone-blocks */
 import "./table.css"
 
 export function TableBody ({
-    value,
+data,
 }){
     return (
         <tbody>
@@ -11,3 +13,7 @@ export function TableBody ({
     </tbody>
     )
 };
+
+{/* <tr className="bodyTable">
+{data.map(item=><th className="tableBodyCell">{item}</th>)}
+</tr> */}

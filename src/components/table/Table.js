@@ -1,20 +1,15 @@
-// import { TableHead } from "../table/TableHead";
+import { TableHead } from "../table/TableHead";
 // import { TableBody } from "../table/TableBody";
 import "./table.css"
-// import { useState, useEffect } from "react";
-// import axios from "axios";
 
-export function Table({ posts }) {
+export function Table({
+  posts }) {
   return (
     posts.map((post) => {
       return (
         <>
-            <thead>
-              <tr className="headerTable">
-                <th className="tableHeaderCell"></th>
-              </tr>
-            </thead>
           <table className="table">
+          <TableHead value= {['Nome do Cliente', 'Valor Financiado', 'Valor Bruto', 'Valor de aquisição','Prazo','Nº CCB']} />
             <tbody>
               <tr className="bodyTable">
                 <th className="tableBodyCell">{post.nomeCompleto}</th>
@@ -34,3 +29,8 @@ export function Table({ posts }) {
     })
   )
 }
+            {/* <thead>
+              <tr className="headerTable">
+              {value.map(item=><th className="tableHeaderCell">{item}</th>)}
+              </tr>
+            </thead> */}
