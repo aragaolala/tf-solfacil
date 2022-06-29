@@ -1,15 +1,22 @@
-import "./table.css"
+/* eslint-disable no-lone-blocks */
+import "./table.css";
 
-export function TableHead  ({
-value,
-className
-})
-{
+export function TableHead({
+   columns,
+    key, 
+    Header }) {
   return (
     <thead>
       <tr className="headerTable">
-        {value.map(item=><th className="tableHeaderCell">{item}</th>)}
+          <th className="tableHeaderCell">{columns}</th>
       </tr>
     </thead>
   );
-};
+}
+
+{/* <tr className="headerTable">
+React.Children.toArray(
+    columns.map(({ key,Header }) => 
+    <th className="tableHeaderCell">{Header}</th>)
+  )
+</tr> */}
