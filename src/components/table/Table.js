@@ -19,8 +19,8 @@ export function Table({ posts } , i) {
                 <th className="tableBodyCell">R$ {post.valorBruto}</th>
                 <th className="tableBodyCell">R$ {post.valorAquisicao}</th>
                 <th className="tableBodyCell">
-                  <p style={{ color: "red", alignSelf: "center" }}> {post.parcelas}x </p>
-                  <p style={{ color: "red", alignSelf: "center", fontSize: 10 }}> {post.cet} </p>
+                  <p> {post.parcelas}x </p>
+                  <p style={{ fontSize: 10 }}> {post.cet} </p>
                 </th>
                 <th className="tableBodyCell">{post.numCcb}</th>
               </tr>

@@ -1,4 +1,3 @@
-// import Button from '../button/Button';
 import logotipo from "../../img/icone-footer.png";
 import Arrow from "../../img/arrow-footer.png";
 import './footer.css'
