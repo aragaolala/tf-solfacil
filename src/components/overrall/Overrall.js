@@ -1,7 +1,10 @@
 import "./style.css"
 
 export function Overrall ({
-    value
+    value,
+    pf,
+    pj,
+    total
 })
 {
     return(
@@ -10,12 +13,13 @@ export function Overrall ({
             
             <div className="totalSumContainer">
             <h3 className="sumTitle"> Valor {value} </h3>
+               
                <div className="totalSumBox">
-               <div className="totalSum">PF R${value}</div>
-                <div className="totalSum">PJ R${value}</div>
+               <div className="totalSum">PF R${pf}</div>
+                <div className="totalSum">PJ R${pj}</div>
                </div>
                 
-                <p className="GlobalSumResult">  Total R$ {value} </p>
+                <p className="GlobalSumResult">  Total R$ {total} </p>
         </div>  
             
         
@@ -24,4 +28,5 @@ export function Overrall ({
         
     )
 }
+
 

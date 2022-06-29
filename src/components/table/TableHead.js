@@ -8,7 +8,7 @@ export function TableHead  ({
     return (
       <thead>
         <tr className="headerTable">
-          {value.map(item=><th className="tableHeaderCell">{item}</th>)}
+          {value.map((item, i)=><th key={i} className="tableHeaderCell">{item}</th>)}
         </tr>
       </thead>
     );
