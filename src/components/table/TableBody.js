@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-lone-blocks */
 import "./table.css"
 
