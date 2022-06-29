@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "../src/pages/Login/login";
+import Login from "./Pages/Login/login"
 import Feed from "../src/feed";
 
 // import { PrivateRoute } from "./privateRoute";

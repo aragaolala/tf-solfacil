@@ -10,6 +10,8 @@ import { useNavigate } from 'react-router';
 
 function Login() {
 
+    document.body.style.backgroundColor = '#333333';
+
     const [msgError, setMsgError] = useState("")
 
     // const { errors } = handleLogin(ErrorsMessage)
