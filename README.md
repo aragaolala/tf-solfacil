@@ -1,6 +1,8 @@
 <div align="center">
 
-# _React App_
+# _React App_ <img alt="icon" src="/src/img/react-icon.png" >
+  
+  <br>
 
 <img alt="image" src="/src/img/Group 1.jpg" width="500px">
   
