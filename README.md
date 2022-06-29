@@ -1,6 +1,6 @@
 <div align="center">
 
-# _React App_ <img alt="icon" src="/src/img/react-icon.png" >
+# _React App_ <img alt="icon" src="/src/img/react-icon.png" width="25px" >
   
   <br>
 
