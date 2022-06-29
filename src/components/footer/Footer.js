@@ -1,4 +1,3 @@
-import Button from '../button/Button';
 import logotipo from "../../img/icone-footer.png";
 import Arrow from "../../img/arrow-footer.png";
 import './footer.css'
@@ -12,13 +11,13 @@ export function Footer() {
                     alt="ícone do footer"
                     src={logotipo}
                 />
-                <button className="arrowButton">
+                <button className="arrowButton" value="footer-btn" id="footer-btn">
                 <img
                     className="icone-arrow"
                     alt="ícone-arrow do footer"
                     src={Arrow}
                 />
-               <p>voltar</p>
+                <p className="paragrafo-footer">voltar</p>
             </button>
             </footer>
         </>
