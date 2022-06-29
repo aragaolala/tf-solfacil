@@ -1,8 +1,10 @@
-<h1 align="center" id="title">React app</h1>
+<div align="center">
 
-<br>
+# _React App_
 
-<p align="center"><img src="https://landing.solfacil.com.br/img/share/home.jpg" alt="project-image" width='500px'></p>
+<img alt="image" src="/src/img/Group 1.jpg" width="500px">
+  
+</div>
 
 <br>
 
