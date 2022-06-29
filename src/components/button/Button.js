@@ -5,7 +5,7 @@ function Button ({
     onClick,
     text,
     value,
-    className = "button-input",
+    className,
 }) {
     return (
         <button
