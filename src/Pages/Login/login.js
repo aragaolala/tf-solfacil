@@ -1,14 +1,17 @@
 import { useState } from "react";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
-import Logo from "../../img/logo-solfacil-png.png";
+import Logo from "../../img/logo-solfacil.png";
 import styles from "./login.module.css";
 import { login, useAuth } from "../../firebase/firebase";
 import { useNavigate } from 'react-router';
+
 // import ErrorsMessage from "./loginValid";
 
 
 function Login() {
+
+    document.body.style.backgroundColor = '#333333';
 
     const [msgError, setMsgError] = useState("")
 
@@ -39,22 +42,28 @@ function Login() {
             if (!password) {
                 setMsgError('Ops, faltou a senha.');
                 return
-            } 
+            }
             if (password.length < 6) {
-                setMsgError('Vish, senha curta.');
+                setMsgError('Eita, senha curta.');
                 return
             }
             setMsgError("")
             await login(email, password);
+            navigate("/feed");
             
             
-        } catch {
+        } catch(error) {
+            const errorCode = error.code;
+            console.log(errorCode, "JESUS")
+            switch(errorCode) {
+                case "auth/wrong-password": 
+                setMsgError('Senha errada.');
+                break
 
-            // ok = !email && !password;
-
-        }
-        setLoading(false)
-        navigate("/feed");
+                default: setMsgError('Ops, algo aconteceu.');
+            }
+        } 
+        setLoading(false);
     }
 
     return (
@@ -69,7 +78,7 @@ function Login() {
                     onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     placeholder="user@suaempresa.com.br"
-                    // required={true}
+                // required={true}
                 />
                 <Input
                     classNameInput="input"
@@ -79,7 +88,7 @@ function Login() {
                     onChange={(e) => setPassword(e.target.value)}
                     name="password"
                     placeholder="******"
-                    // required={true}
+                // required={true}
                 />
                 <Button
                     text="Entrar"
@@ -87,8 +96,8 @@ function Login() {
                     disabled={loading || currentUser}
                 />
                 {msgError && (
-                    <div className="error-container">
-                        <p className="error-mensage">{msgError}</p>
+                    <div className={styles.errorContainer}>
+                        <p className={styles.errorMensage}>{msgError}</p>
                     </div>
                 )}
             </form>
