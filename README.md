@@ -14,7 +14,7 @@
 ## Índice
 - [1. Resumo do projeto](#1-resumo-do-projeto)
 - [2. Histórias de usuário](#2-histórias-de-usuário)
-- [3. Protótipos](#3-protótipos)
+- [3. Layouts Requisitados](#3-layouts-requisitados)
 - [4. Requisitos](#4-requisitos)
 - [5. Tencologias e ferramentas utilizadas](#5-tecnologias-e-ferramentas-utilizadas)
 - [6. Desenvolvedoras](#6-desenvolvedoras)
@@ -27,16 +27,17 @@
 
 ## 2. Histórias de usuário
 <br>
-
-[História de usuário 1] Usuário deve acessar a tela inicial de Login: 
-- Eu, enquanto usuário, quero ter acesso a uma página de login para inserir minhas credenciais e acessar o sistema.
-
-<br>
-
-[História de usuário 2] Usuário deve autenticar credenciais:
-- Eu, enquanto usuário, quero ter validar e autenticar minhas credenciais no banco de dados para acessar com segurança a pagina Feed.
+<table>
+<td>
+<img alt="historia1" src="/src/img/História de usuário 1.png">
+</td>
 
 <br>
+<td>
+<img alt="historia2" src="/src/img/históriaDeUsuário2.png">
+</td>
+<br>
+</table>
 
 [História de usuário 3] Usuário deve ter acesso aos dados dispostos em formato de tabela:
 - Eu, enquanto usuário, quero ter acesso aos dados a partir de uma visualização em tabela.
@@ -50,10 +51,21 @@
 <br>
 
 ---
-## 3. Protótipos
-'protótipos aqui'
 
----
+## 3. Layouts Requisitados
+<table>
+<td>
+
+### Versão desktop - Login
+<img alt="desktop" src="/src/img/layout desktop.png">
+</td>
+
+<td>
+
+### Versão mobile - Login
+<img alt="mobile" src="/src/img/layout mobile.png">
+</td>
+</table>
 
 ## 4. Requisitos
 
