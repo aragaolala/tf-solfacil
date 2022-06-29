@@ -2,25 +2,25 @@
 // import { TableBody } from "../table/TableBody";
 import "./table.css"
 
-
-export function Table({
-  columns,
-  data
-}) {
+export function Table({ posts }) {
   return (
-    <>
-      <table className="table">
-        <thead>
-        <tr className="headerTable">
-          <th className="tableHeaderCell">{columns}</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr className="bodyTable">
-            <th className="tableBodyCell">{data}</th>
-            </tr>
-    </tbody>
-      </table>
-    </>
-  );
+    posts.map((post) => {
+      return (
+        <>
+          <table className="table">
+            <thead>
+              <tr className="headerTable">
+                <th className="tableHeaderCell"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="bodyTable">
+                <th className="tableBodyCell">{post.cpf}</th>
+              </tr>
+            </tbody>
+          </table>
+        </>
+      )
+    })
+  )
 }

@@ -1,5 +1,5 @@
-/* eslint-disable no-lone-blocks */
-import "./table.css";
+// import { Header } from "../header/Header"
+import "./table.css"
 
 export function TableHead({
    columns,
@@ -8,7 +8,7 @@ export function TableHead({
   return (
     <thead>
       <tr className="headerTable">
-          <th className="tableHeaderCell">{columns}</th>
+        {value.map((item, i)=><th key={i} className="tableHeaderCell">{item}"oi"</th>)}
       </tr>
     </thead>
   );
