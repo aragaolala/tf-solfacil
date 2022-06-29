@@ -43,7 +43,7 @@ const Feed = () => {
 
         <div>
 
-          {posts.map((post) => {
+          {/* {posts.map((post) => {
             return (
               <div key={post.id}>
                 <h2 className="post-body">{post.nomeCompleto}</h2>
@@ -59,7 +59,7 @@ const Feed = () => {
               </div>
             );
           }
-          )}
+          )} */}
         </div>
 
       </main>
