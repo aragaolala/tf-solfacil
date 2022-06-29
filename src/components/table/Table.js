@@ -1,5 +1,5 @@
-import { TableHead } from "../table/TableHead";
-import { TableBody } from "../table/TableBody";
+// import { TableHead } from "../table/TableHead";
+// import { TableBody } from "../table/TableBody";
 import "./table.css"
 
 
@@ -10,12 +10,16 @@ export function Table({
   return (
     <>
       <table className="table">
-        <TableHead columns={columns} />
-        <TableBody data={data}/>
-        <TableBody data={data}/>
-        <TableBody data={data}/>
-        <TableBody data={data}/>
-        <TableBody data={data}/>
+        <thead>
+        <tr className="headerTable">
+          <th className="tableHeaderCell">{columns}</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr className="bodyTable">
+            <th className="tableBodyCell">{data}</th>
+            </tr>
+    </tbody>
       </table>
     </>
   );
