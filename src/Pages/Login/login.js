@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
-import Logo from "../../img/logo-solfacil-png.png";
+import Logo from "../../img/logo-solfacil.png";
 import styles from "./login.module.css";
 import { login, useAuth } from "../../firebase/firebase";
 import { useNavigate } from 'react-router';
@@ -9,6 +9,8 @@ import { useNavigate } from 'react-router';
 
 
 function Login() {
+
+    document.body.style.backgroundColor = '#333333';
 
     const [msgError, setMsgError] = useState("")
 

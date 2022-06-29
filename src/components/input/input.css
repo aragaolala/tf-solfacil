@@ -13,7 +13,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    
+
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
@@ -25,14 +25,21 @@
     flex-grow: 0;
 }
 
-.input-label{
+.input-label {
     width: 71px;
-height: 16px;
+    height: 16px;
 
-font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-color: #666666;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+}
+
+@media screen and (max-width: 500px) {
+    .input{
+    width: 300px;
+    height: 40px;
+    } 
 }
