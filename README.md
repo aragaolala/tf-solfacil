@@ -45,15 +45,14 @@
 
 <br>
 <td>
-<img alt="historia2" src="/src/img/históriaDeUsuário2.png">
+<img alt="historia2" src="/src/img/HistóriaDeUsuário2.png">
 </td>
   </table>
   <table>
   <td>
-  <img alt="historia3" src="/src/img/História de usuário 3.png">
-  </td> 
+  <img alt="historia3" src="/src/img/HistóriaDeUsuário-3.png">
   <td>
-  <img alt="historia4" src="">
+  <img alt="historia4" src="/src/img/HistóriaDeUsuário4.png">
   </td>
 <br>
 </table>
