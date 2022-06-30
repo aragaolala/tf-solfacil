@@ -6,16 +6,11 @@ import styles from "./login.module.css";
 import { login, useAuth } from "../../firebase/firebase";
 import { useNavigate } from 'react-router';
 
-// import ErrorsMessage from "./loginValid";
-
-
 function Login() {
 
     document.body.style.backgroundColor = '#333333';
 
     const [msgError, setMsgError] = useState("")
-
-    // const { errors } = handleLogin(ErrorsMessage)
 
     const navigate = useNavigate();
 
@@ -50,19 +45,17 @@ function Login() {
             setMsgError("")
             await login(email, password);
             navigate("/feed");
-            
-            
-        } catch(error) {
+
+        } catch (error) {
             const errorCode = error.code;
             console.log(errorCode, "Senha incorreta.")
-            switch(errorCode) {
-                case "auth/wrong-password": 
-                setMsgError('Senha incorreta.');
-                break
-
+            switch (errorCode) {
+                case "auth/wrong-password":
+                    setMsgError('Senha incorreta.');
+                    break
                 default: setMsgError('Ops, algo aconteceu.');
             }
-        } 
+        }
         setLoading(false);
     }
 
@@ -78,7 +71,6 @@ function Login() {
                     onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     placeholder="user@suaempresa.com.br"
-                // required={true}
                 />
                 <Input
                     classNameInput="input"
@@ -88,7 +80,6 @@ function Login() {
                     onChange={(e) => setPassword(e.target.value)}
                     name="password"
                     placeholder="******"
-                // required={true}
                 />
                 <Button
                     text="Entrar"

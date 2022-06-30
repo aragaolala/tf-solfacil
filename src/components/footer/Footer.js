@@ -21,13 +21,13 @@ export function Footer() {
                     src={logotipo}
                 />
                 <button className="arrowButton" value="footer-btn" id="footer-btn" onClick={handleLogout}>
-                <img
-                    className="icone-arrow"
-                    alt="ícone-arrow do footer"
-                    src={Arrow}
-                />
-                <p className="paragrafo-footer">voltar</p>
-            </button>
+                    <img
+                        className="icone-arrow"
+                        alt="ícone-arrow do footer"
+                        src={Arrow}
+                    />
+                    <p className="paragrafo-footer">voltar</p>
+                </button>
             </footer>
         </>
     )

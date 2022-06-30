@@ -1,5 +1,4 @@
 import { TableHead } from "../table/TableHead";
-// import { TableBody } from "../table/TableBody";
 import "./table.css"
 
 export function Table({ posts } , i) {
@@ -10,9 +9,7 @@ export function Table({ posts } , i) {
         < TableHead value={['Nome do Cliente', 'Valor Financiado', 'Valor Bruto', 'Valor de aquisição', 'Prazo', 'Nº CCB']} />
         {posts.map((post) => {
           return (
-
             <tbody key={post.id}>
-              
               <tr className="bodyTable">
                 <th className="tableBodyCell">{post.nomeCompleto}</th>
                 <th className="tableBodyCell">R$ {post.valorFinanciado}</th>
@@ -25,11 +22,9 @@ export function Table({ posts } , i) {
                 <th className="tableBodyCell">{post.numCcb}</th>
               </tr>
             </tbody>
-
           )
         })}
       </table>
     </>
-
   )
 }

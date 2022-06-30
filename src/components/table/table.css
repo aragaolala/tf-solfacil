@@ -6,31 +6,28 @@
     padding: 32px;
     gap: 24px;
     width: 1108px;
-    height:fit-content;
+    height: fit-content;
     background: #FFFFFF;
     box-shadow: 0px 16px 64px rgb(0 0 0 / 16%);
     border-radius: 4px;
     align-content: flex-start;
     justify-content: center;
     margin-bottom: 90px;
-
 }
 
-.headerTable{
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px;
-gap: 8px;
-padding: 5px;
-width: 1028px;
-height: 51px;
-border-radius: 4px 0px 0px 4px;
-border: none;
-border-bottom: 1px solid #FFB600;
+.headerTable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    padding: 5px;
+    width: 1028px;
+    height: 51px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    border-bottom: 1px solid #FFB600;
 }
-
-
 
 .tableHeaderCell {
     display: flex;
@@ -41,11 +38,11 @@ border-bottom: 1px solid #FFB600;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
-font-size: 16px;
-color: #666666;
-line-height: 17px;
-width: 169px;
-height: 49px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 17px;
+    width: 169px;
+    height: 49px;
 }
 
 .tableBodyCell {
@@ -53,7 +50,7 @@ height: 49px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;  
+    line-height: 150%;
     color: #666666;
     width: 1028px;
     height: 21px;
@@ -73,6 +70,3 @@ tbody {
     border-radius: 4px;
     align-self: stretch;
 }
-
-
-

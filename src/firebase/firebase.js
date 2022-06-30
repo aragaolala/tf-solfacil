@@ -1,10 +1,6 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-// import firebase from 'firebase';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyAANT57GmDzUWNDj2VMOdQlKc9VqOpsEOw",
@@ -16,35 +12,23 @@ const firebaseConfig = {
   measurementId: "G-HKRT47DM7Q"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
-
 
 const auth = getAuth(app);
 
 export async function login(email, password) {
-
   return await signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in
-    const  user = userCredential.user;
-    // ...
-    return user;
-  
-  });
-
+    .then((userCredential) => {
+      const user = userCredential.user;
+      return user;
+    });
 }
 
-
 export function useAuth() {
-  const [ currentUser, setCurrentUser ] = useState();
-
+  const [currentUser, setCurrentUser] = useState();
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, user => setCurrentUser(user));
     return unsub;
   }, [])
-
   return currentUser
-
 }
