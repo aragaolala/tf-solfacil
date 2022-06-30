@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "../src/Pages/Login/login.js";
 import Feed from "../src/Pages/Feed/feed.js";
 
-// import { PrivateRoute } from "./privateRoute";
-
 function AllRoutesApp() {
   return (
     <Router basename={process.env.PUBLIC_URL}>

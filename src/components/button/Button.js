@@ -1,6 +1,6 @@
 import "./button.css"
 
-function Button ({
+function Button({
     type,
     onClick,
     text,

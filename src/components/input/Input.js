@@ -7,7 +7,6 @@ function Input({
     value,
     placeholder,
     onChange,
-    required,
     classNameLabel = "input-label",
     classNameInput = "input",
   
