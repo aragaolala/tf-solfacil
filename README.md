@@ -61,7 +61,7 @@ Acesso à aplicação <a href="https://tf-solfacil.netlify.app/">aqui</a>
   </table>
   <table>
   <td>
-  <img alt="historia3" src="/src/img/HistóriaDeUsuário-3.png">
+  <img alt="historia3" src="/src/img/HistóriaDeUsuário.3.png">
   <td>
   <img alt="historia4" src="/src/img/HistóriaDeUsuário-4.png">
   </td>
