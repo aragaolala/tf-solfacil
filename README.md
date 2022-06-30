@@ -55,9 +55,7 @@
 
 <br>
 
-[História de usuário 4] Usuário deve ordenar as informações dispostas na tabela:
 
-- Eu, enquanto usuário, quero poder ordenar o nome do cliente por ordem alfabética e os valores numéricos em ordem crescente e decrescente na tabela.
 
 <br>
 
