@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "../src/Pages/Login/login.js";
-import Feed from "../src/feed";
+import Login from "../src/pages/Login/login.js";
+import Feed from "./pages/Feed/feed";
 
 // import { PrivateRoute } from "./privateRoute";
 

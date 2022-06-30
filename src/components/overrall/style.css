@@ -3,6 +3,8 @@
 
 .sumContainer{
     display:flex;
+    padding: 0px;
+    gap: 16px;
 }
 
 .sumTitle{

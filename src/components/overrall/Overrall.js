@@ -9,7 +9,7 @@ export function Overrall ({
 {
     return(
         <>
-        <div className="sumContainer">
+       
             
             <div className="totalSumContainer">
             <h3 className="sumTitle"> Valor {value} </h3>
@@ -20,7 +20,7 @@ export function Overrall ({
                </div>
                 
                 <p className="GlobalSumResult">  Total R$ {total} </p>
-        </div>  
+      
             
         
         </div>

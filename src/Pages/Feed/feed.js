@@ -2,10 +2,10 @@
 /* eslint-disable-next-line */
 import React, { useState, useEffect, useMemo } from 'react';
 import axios from "axios";
-import { Table } from "./components/table/Table";
-import { Overrall } from "./components/overrall/Overrall.js";
-import { Header } from "./components/header/Header.js";
-import { Footer } from './components/footer/Footer.js';
+import { Table } from "../../components/table/Table";
+import { Overrall } from "../../components/overrall/Overrall.js";
+import { Header } from "../../components/header/Header.js";
+import { Footer } from '../../components/footer/Footer.js';
 
 const Feed = () => {
 
@@ -42,10 +42,10 @@ const Feed = () => {
         <Header />
 
         <section className="tableUpperContent">
-          <h2> Total Formalizações </h2>
-
+        <h2 className="totalSumTitle"> Total Formalizações </h2>
           {Object.keys(cessao).length !== 0 &&
             <div className="sumContainers">
+          
               <Overrall value={"Financiamento"}
                 className="sumContainer"
                 pf={cessao.pf.financiado}
