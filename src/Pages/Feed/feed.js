@@ -2,10 +2,10 @@
 /* eslint-disable-next-line */
 import React, { useState, useEffect, useMemo } from 'react';
 import axios from "axios";
-import { Table } from "./components/table/Table";
-import { Overrall } from "./components/overrall/Overrall.js";
-import { Header } from "./components/header/Header.js";
-import { Footer } from './components/footer/Footer.js';
+import { Table } from "../../components/table/Table";
+import { Overrall } from "../../components/overrall/Overrall.js";
+import { Header } from "../../components/header/Header.js";
+import { Footer } from '../../components/footer/Footer.js';
 
 const Feed = () => {
 

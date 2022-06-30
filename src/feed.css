@@ -55,3 +55,22 @@ color: #666666;
     gap: 16px;
 }
 
+
+header, footer, svg {
+    /* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+    @media only screen and (min-width: 992px max-width: 1199px) {
+        /* LG - styles for browsers larger than 960px; */
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        /* MD - styles for browsers larger than 1440px; */
+    }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        /* SM - for sumo sized (mac) screens */
+    }
+    @media only screen and (max-width: 575px) {
+       /* XS - styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+}
+
