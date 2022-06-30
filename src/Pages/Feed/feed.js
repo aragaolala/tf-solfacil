@@ -7,6 +7,7 @@ import { Overrall } from "../../components/overrall/Overrall.js";
 import { Header } from "../../components/header/Header.js";
 import { Footer } from '../../components/footer/Footer.js';
 
+
 const Feed = () => {
 
   const [posts, setPosts] = useState([]);
@@ -34,7 +35,6 @@ const Feed = () => {
         console.log("ERRRRRRRROU")
       })
   }, [])
-
 
   return (
     <>
