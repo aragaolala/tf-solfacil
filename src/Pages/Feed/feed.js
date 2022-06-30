@@ -42,11 +42,10 @@ const Feed = () => {
         <Header />
 
         <section className="tableUpperContent">
-          {/*  */}
-
+        <h2 className="totalSumTitle"> Total Formalizações </h2>
           {Object.keys(cessao).length !== 0 &&
             <div className="sumContainers">
-              <h2 className="totalSumTitle"> Total Formalizações </h2>
+          
               <Overrall value={"Financiamento"}
                 className="sumContainer"
                 pf={cessao.pf.financiado}

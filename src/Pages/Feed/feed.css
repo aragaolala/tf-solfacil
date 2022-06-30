@@ -6,9 +6,9 @@
     border: 0;
     box-sizing: border-box;
 }
-/*body{
+body{
     background-color:  #eee;
-}*/
+}
 
 .solfacil-logo{
     width: 3%;
@@ -27,8 +27,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px;
-    gap: 24px;
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 55px;
+    gap: 16px;
     width: 1108px;
     height: 230px;
     background: #FFFFFF;
@@ -38,62 +41,54 @@
     order: 0;
     flex-grow: 0;
     font-family: 'Rubik';
+    margin-bottom: 25px;
 }
-.tableUpperContent>h2{
-    font-family: 'Rubik';
+.totalSumTitle{
+font-family: 'Rubik';
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
-line-height: 24px;
+font-size: 12px;
+line-height: 16px;
 color: #666666;
+
 }
 .sumContainers{
     display:flex;
-    padding: 4px;
+    padding: 0px;
     gap: 16px;
 }
-
+.sumContainer{
+    
+}
 
     @media only screen and (max-width: 575px) {
        /* XS - styles for mobile browsers smaller than 480px; (iPhone) */
-       body{
-        background-color: #E5E5E5
-        ;
-       }
-       .feedContainer{
-        background-color:  #E5E5E5;
-        padding: 0;
-        margin:0 auto;
-        width:575px;
-       }
+
        .tableUpperContent{
-        height: 621px;
-        background: #FFFF;
+        height: 1437px;
         margin-left: 36px;
-        width: 631px;
+        width: 1074px;
         padding: 0;
        margin-bottom: 2px;
        }
+
        .headerTable{
         height: 88px;
-
        }
+
        .totalSumTitle{
-        width:fit-content;
-        height: fit-content;
     }
        .sumContainers{
-        height: 528px;
+        height: 1430px;
         width: 535px;
         margin-top: 38px;
         margin-bottom: 24px;
-        margin-left: 0px;
+        margin-left: 180px;
         padding: 0;
         display: flex;
         flex-direction: column;
     }
     .sumContainer{
-
         height: 445px;
         width:fit-content;
         margin-right:2px;
@@ -101,17 +96,18 @@ color: #666666;
         padding: 0;
     }
     .totalSumContainer{
-        width: 557px;
-        height: 114px;
-        display: flex;
-        margin-left: 37px;
+        width: 733px;
+        height: 223px;
+    display: flex;
+    margin-left: 37px;
+    font-size: 32px;
       }
       
       .totalSumTitle{
         margin-left: 24px;
       }
    .table{
-    background: #FFFF;
+   
     margin-left: 36px;
     height: 936px;
     }
@@ -137,8 +133,7 @@ color: #666666;
     @media only screen and (min-width: 576px) and (max-width: 767px) {
         /* SM - for sumo sized (mac) screens */
         body{
-            background-color: #E5E5E5
-            ;
+            
            }
            .feedContainer{
             background-color:  #E5E5E5;

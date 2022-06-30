@@ -6,9 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #E5E5E5;
+    background-color: #eee;
     gap: 35rem;
-    /*para  aumentar ou diminuir a distancia é aqui */
 }
 
 .arrowButton {
