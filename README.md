@@ -40,18 +40,18 @@
 <br>
 <table>
 <td>
-<img alt="historia1" src="/src/img/História de usuário 1.png">
+<img alt="historia1" src="/src/img/históriaDeUsuário1.png">
 </td>
 
 <br>
 <td>
 <img alt="historia2" src="/src/img/históriaDeUsuário2.png">
 </td>
+  <th>
+  <img alt="historia3" src="/src/img/História de usuário 3.png">
+  </th> 
 <br>
 </table>
-
-[História de usuário 3] Usuário deve ter acesso aos dados dispostos em formato de tabela:
-- Eu, enquanto usuário, quero ter acesso aos dados a partir de uma visualização em tabela.
 
 <br>
 
