@@ -116,7 +116,7 @@ Acesso à aplicação <a href="https://tf-solfacil.netlify.app/">aqui</a>
 
 <td>
 
-### 💻 Versão Desktop (sem console) - Login e Feed
+### 💻 Sem console - Login e Feed
 <img alt="resutado"  src="/src/img/VideoTF-sem-console.gif">
 
 </td>
@@ -126,7 +126,7 @@ Acesso à aplicação <a href="https://tf-solfacil.netlify.app/">aqui</a>
 
 <td>
 
-### 💻 Versão Desktop (com console) - Login e Feed
+### 💻 Com console - Login e Feed
 <img alt="resultado" src="/src/img/VideoTF-com-console.gif">
 
 </td>
