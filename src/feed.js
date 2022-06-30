@@ -14,13 +14,27 @@ const Feed = () => {
   useEffect(() => {
     axios.get('https://mocki.io/v1/5fcf051d-2867-4698-8c1c-df076b4d2948')
       .then((response) => {
-        console.log(Object.values(response.data))
+        // console.log(Object.values(response.data))
         setPosts(response.data.detalhes);
       })
       .catch(() => {
         console.log("ERRRRRRRROU")
       })
   }, [])
+
+  const [cessao, setCessao] = useState({});
+
+  useEffect(() => {
+    axios.get('https://mocki.io/v1/5fcf051d-2867-4698-8c1c-df076b4d2948')
+      .then((response) => {
+        console.log(response.data.cessao)
+        setCessao(response.data.cessao);
+      })
+      .catch(() => {
+        console.log("ERRRRRRRROU")
+      })
+  }, [])
+
 
   return (
     <>
@@ -30,11 +44,31 @@ const Feed = () => {
         <section className="tableUpperContent">
           <h2> Total Formalizações </h2>
 
-          <div className="sumContainers">
-            <Overrall value={"Financiamento"} className="sumContainer" />
-            <Overrall value={"Bruto"} className="sumContainer" />
-            <Overrall value={"Aquisição"} className="sumContainer" />
-          </div>
+          {Object.keys(cessao).length !== 0 &&
+            <div className="sumContainers">
+              <Overrall value={"Financiamento"}
+                className="sumContainer"
+                pf={cessao.pf.financiado}
+                pj={cessao.pj.financiado}
+                total={cessao.total.financiado}
+              />
+
+              <Overrall value={"Bruto"}
+                className="sumContainer"
+                pf={cessao.pf.bruto}
+                pj={cessao.pj.bruto}
+                total={cessao.total.bruto}
+              />
+
+              <Overrall value={"Aquisição"}
+                className="sumContainer"
+                pf={cessao.pf.aquisicao}
+                pj={cessao.pj.aquisicao}
+                total={cessao.total.aquisicao}
+              />
+            </div>
+          }
+
         </section>
 
         <section className="tableContainer">
@@ -44,8 +78,8 @@ const Feed = () => {
       </main>
       <Footer />
 
-    
-      
+
+
     </>
   );
 };
