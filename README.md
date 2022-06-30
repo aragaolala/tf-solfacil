@@ -28,6 +28,13 @@
 
 ## 1. Resumo do projeto
 
+### Objetivos
+
+- Criar uma tela de login para o administrador autorizado acessar a tabela de financiamento com as informações dos clientes da Solfácil.
+- Criar uma tela de financiamento com as informações globais dos clientes.
+
+---
+
 Acesso à aplicação <a href="https://tf-solfacil.netlify.app/">aqui</a>
 
 | Login: admin@solfacil.com |
