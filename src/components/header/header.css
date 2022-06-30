@@ -13,6 +13,7 @@ header{
 
 .header {
     text-align : center;
+    margin-left: 16px;
 }
 
 svg {
@@ -64,4 +65,15 @@ svg {
     color: #333333;
     border: none;
     cursor: pointer;
+}
+@media only screen and (max-width: 575px) {
+    /* XS - styles for mobile browsers smaller than 480px; (iPhone) */
+    .Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-left: 36px;
+
+    }
 }
