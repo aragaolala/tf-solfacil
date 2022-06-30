@@ -112,7 +112,26 @@ Acesso à aplicação <a href="https://tf-solfacil.netlify.app/">aqui</a>
 
 ## 5. Resultado
 
-"Imagens do resultado aqui"
+<table>
+
+<td>
+
+### 💻 Versão Desktop (sem console) - Login e Feed
+<img alt="resutado"  src="/src/img/VideoTF-sem-console.gif">
+
+</td>
+
+</table>
+<table>
+
+<td>
+
+### 💻 Versão Desktop (com console) - Login e Feed
+<img alt="resultado" src="/src/img/VideoTF-com-console.gif">
+
+</td>
+
+</table>
 
 ---
 
