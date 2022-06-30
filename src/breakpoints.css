@@ -9,16 +9,10 @@ body, header, footer {
         /* MD - styles for browsers larger than 1440px; */
     }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
-        .tableUpperContent {
-            flex-wrap: wrap;
-            flex-direction: row;
-            width: 508px;
-            height: 429px;
-            
         }
         /* SM - for sumo sized (mac) screens */
     }
     @media only screen and (max-width: 575px) {
        /* XS - styles for mobile browsers smaller than 480px; (iPhone) */
     }
-}
+

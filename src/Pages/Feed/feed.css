@@ -6,8 +6,6 @@
     border: 0;
     box-sizing: border-box;
 }
-
-
 /*body{
     background-color:  #eee;
 }*/
@@ -68,15 +66,17 @@ color: #666666;
         margin:0 auto;
         width:575px;
        }
-
        .tableUpperContent{
-        height: 528px;
+        height: 621px;
         background: #FFFF;
         margin-left: 36px;
-
-        width: 543px;
+        width: 631px;
         padding: 0;
        margin-bottom: 2px;
+       }
+       .headerTable{
+        height: 88px;
+
        }
        .totalSumTitle{
         width:fit-content;
@@ -100,25 +100,24 @@ color: #666666;
         margin-left: 0px;
         padding: 0;
     }
-
     .totalSumContainer{
-        margin: 0 auto;
-        width: 478px;
+        width: 557px;
         height: 114px;
         display: flex;
-        
-        
+        margin-left: 37px;
       }
+      
       .totalSumTitle{
         margin-left: 24px;
       }
    .table{
     background: #FFFF;
     margin-left: 36px;
-    height: 863px;
+    height: 936px;
     }
+
     tbody{
-        height: 67px;
+        height: 83px;
     }
     .tableContainer{
         background-color:  #E5E5E5;
@@ -129,7 +128,81 @@ color: #666666;
         flex-direction: column;
     }
     .totalSum{
-        width: 424px;
+        width: 476px;
+    height: 40px;
+}
     }
-    }
+    
 
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        /* SM - for sumo sized (mac) screens */
+        body{
+            background-color: #E5E5E5
+            ;
+           }
+           .feedContainer{
+            background-color:  #E5E5E5;
+            padding: 0;
+            margin:0 auto;
+            width:575px;
+           }
+           .tableUpperContent{
+            height: 528px;
+            background: #FFFF;
+            margin-left: 36px;
+            width: 543px;
+            padding: 0;
+           margin-bottom: 2px;
+           }
+           .totalSumTitle{
+            width:fit-content;
+            height: fit-content;
+        }
+           .sumContainers{
+            height: 528px;
+            width: 535px;
+            margin-top: 38px;
+            margin-bottom: 24px;
+            margin-left: 0px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .sumContainer{
+    
+            height: 445px;
+            width:fit-content;
+            margin-right:2px;
+            margin-left: 0px;
+            padding: 0;
+        }
+        .totalSumContainer{
+            margin: 0 auto;
+            width: 478px;
+            height: 114px;
+            display: flex;
+          }
+          .totalSumTitle{
+            margin-left: 24px;
+          }
+       .table{
+        background: #FFFF;
+        margin-left: 36px;
+        height: 863px;
+        }
+        tbody{
+            height: 67px;
+        }
+        .tableContainer{
+            background-color:  #E5E5E5;
+        }
+        .totalSumBox{
+            width: 535px;        
+            display: flex;
+            flex-direction: column;
+        }
+        .totalSum{
+            width: 424px;
+        }
+    }
+    

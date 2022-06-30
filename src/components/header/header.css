@@ -74,6 +74,21 @@ svg {
         justify-content: flex-end;
         align-items: flex-start;
         margin-left: 36px;
+        height: 300px;
 
     }
+    .container-info {
+        margin-right: 40%;
+        width: 215px;}
+
+        .button-header {
+            width: 552px;
+        }
+        .titleHeader {
+            font-size: 65px;
+            line-height: 77px;
+        }
+        .subtitleHeader{
+            font-size: 20px;
+        }
 }
