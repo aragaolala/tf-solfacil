@@ -118,16 +118,25 @@ Acesso à aplicação <a href="https://tf-solfacil.netlify.app/">aqui</a>
 
 ## 6. Tecnologias e ferramentas utilizadas
 
-'tecnologias e ferramentas aqui'
+<br>
 
----
+<div>
+  
+<img alt="React" width="50" height="50" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg">             
+<img alt="Firebase" width="50" height="50" src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg"> 
+<img alt="Axios"  width="50" height="50" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/axios_logo_icon_168545.png">
+<img alt="CSS3" width="50" height="50" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg">
+<img alt="Git" width="50" height="50" src="https://github.com/devicons/devicon/blob/master/icons/git/git-plain-wordmark.svg">  
+<img alt="GitHub" width="50" height="50" src="https://img.icons8.com/ios-glyphs/344/github.png"> 
+<img alt="Figma" width="50" height="50" src="https://img.icons8.com/color/344/figma.png">     
+
+<br> 
+  
+</div>
+
+---- 
 
 ## 7. Desenvolvedoras
-
-
-"https://github.com/aragaolala"
-
-
 
 <table>
   <td>
