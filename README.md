@@ -107,4 +107,41 @@
 ---
 ## 7. Desenvolvedoras
 
-'desenvolvedoras aqui'
+<table>
+  <td>
+
+<img alt="Layssa" height="150" src ="https://avatars.githubusercontent.com/u/72772467?v=4">
+    <h3 align="center"><a href="https://github.com/aragaolala">Layssa Aragão</a></h3>
+    <div align="center">
+      <a href="https://linktr.ee/layssaaragao" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> 
+    </div>
+  </td>
+  <td>
+  <img alt="Bruna" height="150" src="https://avatars.githubusercontent.com/u/97756820?v=4">
+    <h3 align="center"><a href="https://github.com/Brulibra"> Bruna de Paula</a></h3>
+    <div align="center">
+      <a href="https://www.linkedin.com/in/brunadpaula" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a
+    </div>
+  </td>
+       <td>
+  <img alt="Ana Clara" height="150" src="https://avatars.githubusercontent.com/u/97203243?v=4">
+    <h3 align="center"><a href="https://github.com/AnaClaraFreitas"> Ana Clara Freitas</a></h3>
+    <div align="center">
+      <a href="https://www.linkedin.com/in/anaclarafreitass" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a
+    </div>
+  </td>
+        <td>
+  <img alt="Louiza" height="150" src="https://avatars.githubusercontent.com/u/72285598?v=4">
+    <h3 align="center"><a href="https://github.com/loulima"> Louiza Lima </a></h3>
+    <div align="center">
+      <a href="https://www.linkedin.com/in/louizalima" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a
+    </div>
+  </td>
+       <td>
+  <img alt="Raele" height="150" src="https://avatars.githubusercontent.com/u/95094504?v=4">
+    <h3 align="center"><a href="https://github.com/raelepereira"> Raele Pereira</a></h3>
+    <div align="center">
+      <a href="https://www.linkedin.com/in/raele-pereira-59b804201/" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a
+    </div>
+  </td>
+</table>
