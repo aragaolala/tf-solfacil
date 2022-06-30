@@ -40,16 +40,21 @@
 <br>
 <table>
 <td>
-<img alt="historia1" src="/src/img/históriaDeUsuário1.png">
+<img alt="historia1" src="/src/img/HIstóriaDeUsuário1.png">
 </td>
 
 <br>
 <td>
 <img alt="historia2" src="/src/img/históriaDeUsuário2.png">
 </td>
-  <th>
+  </table>
+  <table>
+  <td>
   <img alt="historia3" src="/src/img/História de usuário 3.png">
-  </th> 
+  </td> 
+  <td>
+  <img alt="historia4" src="">
+  </td>
 <br>
 </table>
 
