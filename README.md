@@ -192,7 +192,7 @@ Acesso à aplicação <a href="https://tf-solfacil.netlify.app/">aqui</a>
   
   <td>
   <img alt="Layssa Aragão" height="150" src ="https://avatars.githubusercontent.com/u/72772467?v=4">
-    <h3 align="center"><a href="https://github.com/loulima">Layssa Aragão</a></h3>
+    <h3 align="center"><a href="https://github.com/aragaolala">Layssa Aragão</a></h3>
     <div align="center">
       <a href="https://linktr.ee/layssaaragao" target="blank">
 <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a
